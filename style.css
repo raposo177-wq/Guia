@@ -2,75 +2,36 @@
 margin:0px ;
 padding: 0px;
 }
+.grupoComandos{
 
-body{
-    font-family: monospace;
-    background-color: rgb(20, 20, 20);
-    color: rgb(230, 229, 229);
-    font-size: 15px;
-
-    
-}
-header {
-    height:8vh;
-    background-color: rgb(3, 87, 62);
-    color: rgb(17, 230, 45);
-    
-    
-
-
-
-}
-
-
-main{
-    height: 85vh;
-    background-color: rgb(1, 32, 22);
-    display: flex;
-    flex-direction: column;
-    margin-block:auto ;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    color: rgb(17, 230, 45);
-
-
-
-}
-
-footer{ 
-    height: 7vh;
-    background-color: cadetblue;
-    color: rgb(30, 31, 31);
-}
-
-.grupoComandos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 10px;
-
-
+display: flex;
+flex-direction: column;
+gap: 15px
 }
 
 .cartaoComando{
-    width: calc(25% - 20px);
-    border: 1px solid rgb(235, 232, 232);
-    border-radius: 25px;
-    padding: 10px 5px;
-    transition: 150ms;
-    background-color: rgb(188, 241, 174);
-    color: black;
+    border: 1px solid greenyellow;
+    border-radius: 20px;
+    width: 85vw;
+    height: 20vh;
     
-
-}
-.cartaoComando:hover {
-    scale: 102.5%;
-    background-color: cadetblue;
-    transform: translateY(50%);
-    box-shadow: inset; color: brown;
-    
-
 }
 
+@media screen and (min-width: 768px) {
+  .grupoComandos {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .cartaoComando {
+    border: 1px solid #ff0000;
+    border-radius: 20px;
+    width: calc(25% - 15px);
+    min-height: fit-content;
+  }
+}
+    
+
+
+    
+    
